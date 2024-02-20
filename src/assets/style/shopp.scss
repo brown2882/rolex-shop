@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Roh1{
+    color: goldenrod;
+    margin-top: 2%;
+    // margin-left: 2%;
+}
+
+.kk{
+    display:flex;
+    margin-top: 150px;
+}
+
+.searchContainer {
+    position: relative;
+}
+
+.searchInput{
+    margin-top: 55px;
+    padding: 8px 350px 8px 10px;
+    border-radius: 5%;
+    margin-left: 250px;
+    position: relative;
+    // padding-right: 30px; 
+}
+.iconOne {
+    position: absolute;
+    top: 77%;
+    right: 10px; // Adjust this value to control the horizontal position of the icon
+    transform: translateY(-50%);
+    pointer-events: none; // This ensures that the icon doesn't interfere with input events
+}
+
+.ull{
+    text-align: left;
+    color: goldenrod;
+    margin-top: 5px;
+    margin-left: 1085px;
+    
+}
+
+
+.dropdown-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+}
+
+.dropdown-menu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: var(--speed) ease;
+}
+
+
+.iconsi{
+    font-size: 25px;
+    margin-left: 15px;
+    color: black;
+}
+
+.btnn{
+    display: flex;
+}
+
+.icons{
+    margin-top: 55px;
+    margin-left: 285px;
+    display: flex;
+}
+
+
+
+
+
+
+
+.section_top {
+    width: 1550px;
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/rolex.2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 10s infinite ease-in-out;
+}
+
+.content{
+    position: absolute;
+    // top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+@keyframes change {
+    0%
+    {
+        background-image: url(../images/rolex.3.jpg);
+    }
+    20%
+    {
+        background-image: url(../images/rolex.2.jpg);
+    }
+    40%
+    {
+        background-image: url(../images/rolex.1.webp);
+    }
+    60%
+    {
+        background-image: url(../images/rolex.3.jpg);
+    }
+    80%
+    {
+        background-image: url(../images/rolex.2.jpg);
+    }
+    100%
+    {
+        background-image: url(../images/rolex.1.webp);
+    }
+}

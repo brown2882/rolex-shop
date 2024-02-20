@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    //font-family: montserrat;
+  }
+  
+  .home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+    color:white;
+  }
+  .center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+  }
+  
+  .ring{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+  }
+  @keyframes ring {
+    0%{
+      transform: rotate(0deg);
+      box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+      transform: rotate(180deg);
+      box-shadow: 1px 5px 2px #18b201;
+    }
+    100%{
+      transform: rotate(360deg);
+      box-shadow: 1px 5px 2px #0456c8;
+    }
+  }
+  .ring:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255,255,.3);
+  }
+  
+  span{
+    color: #737373;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+  }
+  @keyframes text {
+    50%{
+      color: black;
+    }
+  
+  }
+  
+  
+  .box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+  
+    form{
+      position: absolute;
+      inset: 4px;
+      background: #1c1c1c;
+      padding: 50px 40px;
+      border-radius: 8px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      h1{
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing:0.1em;
+      }
+      .inputBox{
+        position: relative;
+        width: 300px;
+        margin-top: 35px;
+        input{
+          position:relative;
+          width: 100%;
+          padding: 5px 10px 10px;
+          background: transparent;
+          outline: none;
+          border: none;
+          box-shadow: none;
+          background-color: white;
+          font-size: 1em;
+          letter-spacing: 0.05em;
+          transition: 0.5s;
+          z-index: 10;
+        }
+  
+        .p{
+          position: absolute;
+          left:0;
+          padding: 35px 10px 10px;
+          pointer-events: none;
+          color: white;
+          font-size: 1em;
+          letter-spacing: 0.05em;
+          transition: 0.15s;
+        }
+      }
+    }
+  }
+  .boxTwo{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+  
+    form{
+      position: absolute;
+      inset: 4px;
+      background: #1c1c1c;
+      padding: 50px 40px;
+      border-radius: 8px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      h1{
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing:0.1em;
+      }
+      .inputBox{
+        position: relative;
+        width: 300px;
+        margin-top: 35px;
+        input{
+          position:relative;
+          width: 100%;
+          padding: 5px 10px 10px;
+          background: transparent;
+          outline: none;
+          border: none;
+          box-shadow: none;
+          background-color: white;
+          font-size: 1em;
+          letter-spacing: 0.05em;
+          transition: 0.5s;
+          z-index: 10;
+        }
+  
+        .p{
+          position: absolute;
+          left:0;
+          padding: 35px 10px 10px;
+          pointer-events: none;
+          color: white;
+          font-size: 1em;
+          letter-spacing: 0.05em;
+          transition: 0.15s;
+        }
+      }
+    }
+  }
+  .links{
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,
+    transparent, #45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+  .box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,
+            transparent, #45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+  }
+  .boxTwo::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,
+            transparent, red,red,red);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+  }
+  .boxTwo::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,
+            transparent, red,red,red);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+  }
+  
+  .borderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+  }
+  .borderLineTwo{
+    position: absolute;
+    top: 0;
+    inset: 0;
+  }
+  .borderLine::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,
+            transparent, #ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+  }
+  .borderLine::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,
+            transparent, #ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+  }
+  .borderLineTwo::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,
+            transparent, green,green,green);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+  }
+  .borderLineTwo::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,
+            transparent, green,green,green);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+  }
+  @keyframes animate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
